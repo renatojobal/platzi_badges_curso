@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-
-import './global.css';
-import App from './components/App';
+const element = document.createElement('h1');
+element.innerText = 'Hellow, PLatzi Badges!';
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<App />, container);
+container.appendChild(element);
