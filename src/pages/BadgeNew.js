@@ -43,7 +43,7 @@ class BadgeNew extends React.Component {
                 lastName="Kaufman"
                 twitter="sparragus"
                 jobTitle="Frontend Engineer"
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
+                avatarUrl="https://www.gravatar.com/avatar/17275de279db36035b12d4fb0155b82e?d=identicon"
               />
             </div>
             <div class="col-6">
