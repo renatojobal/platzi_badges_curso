@@ -12,11 +12,18 @@ class BadgeForm extends React.Component {
     console.log('Button pressed');
   };
 
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log('FOrmasd');
+  };
+
+
+
   render() {
     return (
       <div>
         <h1>New Attendant</h1>
-        <form onSu>
+        <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label></label>
             <input
@@ -27,7 +34,7 @@ class BadgeForm extends React.Component {
             ></input>
           </div>
           <button
-            type="button"
+      
             onClick={this.handleClick}
             className="btn btn-primary"
           >
