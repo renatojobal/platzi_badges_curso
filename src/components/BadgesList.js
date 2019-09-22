@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./styles/BadgesList.css";
+import './styles/BadgesList.css';
 
 class BadgesListItem extends React.Component {
   render() {
@@ -44,4 +44,3 @@ class BadgesList extends React.Component {
 }
 
 export default BadgesList;
-
