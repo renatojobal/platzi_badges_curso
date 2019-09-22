@@ -3,6 +3,7 @@ import React from "react";
 import "./styles/Badges.css";
 import confLogo from "../images/badge-header.svg";
 import Navbar from "../components/Navbar";
+import BadgesList from "../components/BadgesList";
 
 class Badges extends React.Component {
   state = {
@@ -65,7 +66,9 @@ class Badges extends React.Component {
           </div>
 
           <div className="Badges__list">
-            <div className="Badges__container"></div>
+            <div className="Badges__container">
+              <BadgesList badges={this.state.data} />
+            </div>
           </div>
         </div>
       </div>
