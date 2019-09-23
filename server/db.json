@@ -453,9 +453,33 @@
       "firstName": "Renato",
       "lastName": "Balcázar",
       "email": "renatojobal@gmail.com",
-      "jobTitle": "Developer",
+      "jobTitle": "Frontend",
       "twitter": "renatojobal",
       "id": "9r0I3Fg"
+    },
+    {
+      "firstName": "Renatojobal",
+      "lastName": "asd",
+      "email": "sd@gmail.com",
+      "jobTitle": "asd",
+      "twitter": "asdsad",
+      "id": "e02LgMv"
+    },
+    {
+      "firstName": "Mario",
+      "lastName": "Piedrita",
+      "email": "mariopiedrita@gmail.com",
+      "jobTitle": "Joker",
+      "twitter": "mariopiedrita",
+      "id": "VJPpTOT"
+    },
+    {
+      "firstName": "Carlos",
+      "lastName": "Juca",
+      "email": "chjuca@gmail.com",
+      "jobTitle": "Devoloper at Katarilabs",
+      "twitter": "chjuca",
+      "id": "w4Y2MPf"
     }
   ]
 }
