@@ -1,25 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./styles/Badges.css";
-import confLogo from "../images/badge-header.svg";
-import BadgesList from "../components/BadgesList";
-import PageLoading from "../components/PageLoading";
-import PageError from "../components/PageError";
-
-import api from "../api";
+import './styles/Badges.css';
+import confLogo from '../images/badge-header.svg';
+import BadgesList from '../components/BadgesList';
+import PageLoading from '../components/PageLoading';
+import PageError from '../components/PageError';
+import api from '../api';
 
 class Badges extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log("1, construcotr()");
-
-    this.state = {
-      loading: true,
-      error: null,
-      data: undefined
-    };
-  }
+  state = {
+    loading: true,
+    error: null,
+    data: undefined,
+  };
 
   componentDidMount() {
     this.fetchData();
@@ -30,27 +24,20 @@ class Badges extends React.Component {
 
     try {
       const data = await api.badges.list();
-      this.setState({
-        loading: false,
-        data: data
-      });
+      this.setState({ loading: false, data: data });
     } catch (error) {
-      this.setState({
-        loading: false,
-        error: error
-      });
+      this.setState({ loading: false, error: error });
     }
   };
 
   render() {
     if (this.state.loading === true) {
-      return (<PageLoading />);
+      return <PageLoading />;
     }
 
     if (this.state.error) {
-      return (<PageError error={this.state.error} />);
+      return <PageError error={this.state.error} />;
     }
-
 
     return (
       <React.Fragment>
@@ -60,8 +47,8 @@ class Badges extends React.Component {
               <img
                 className="Badges_conf-logo"
                 src={confLogo}
-                alt="Conf logo"
-              ></img>
+                alt="Conf Logo"
+              />
             </div>
           </div>
         </div>
@@ -73,11 +60,7 @@ class Badges extends React.Component {
             </Link>
           </div>
 
-          <div className="Badges__list">
-            <div className="Badges__container">
-              <BadgesList badges={this.state.data} />
-            </div>
-          </div>
+          <BadgesList badges={this.state.data} />
         </div>
       </React.Fragment>
     );
