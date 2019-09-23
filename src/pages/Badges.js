@@ -11,7 +11,7 @@ class Badges extends React.Component {
     console.log("1, construcotr()");
 
     this.state = {
-      data: []
+      data: [],
     };
   }
 
