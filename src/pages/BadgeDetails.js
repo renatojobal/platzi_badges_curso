@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 import "./styles/BadgeDetails.css";
@@ -8,15 +7,16 @@ import Badge from "../components/Badge";
 
 function BadgeDetails(props) {
   const badge = props.badge;
+
   return (
     <div>
       <div className="BadgeDetails__hero">
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <img src={confLogo} alt="Logo de la conferencia" />
+              <img src={confLogo} alt="Logo de la Conferencia" />
             </div>
-            <div className="col-6 BadgeDetails__hero-attendant-name ">
+            <div className="col-6 BadgeDetails__hero-attendant-name">
               <h1>
                 {badge.firstName} {badge.lastName}
               </h1>
@@ -24,9 +24,10 @@ function BadgeDetails(props) {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="row">
-          <div class="col">
+          <div className="col">
             <Badge
               firstName={badge.firstName}
               lastName={badge.lastName}
@@ -35,7 +36,7 @@ function BadgeDetails(props) {
               jobTitle={badge.jobTitle}
             />
           </div>
-          <div class="col">
+          <div className="col">
             <h2>Actions</h2>
             <div>
               <div>
@@ -46,13 +47,9 @@ function BadgeDetails(props) {
                   Edit
                 </Link>
               </div>
+
               <div>
-                <Link
-                  className="btn btn-primary"
-                  to={`/badges/${badge.id}/delete`}
-                >
-                  Delete
-                </Link>
+                <button className="btn btn-danger">Delete</button>
               </div>
             </div>
           </div>
