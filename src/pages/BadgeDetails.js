@@ -41,6 +41,9 @@ function BadgeDetails(props) {
             <h2>Actions</h2>
             <div>
               <div>
+                <button className="btn btn-primary">
+                  
+                </button>
                 <Link
                   className="btn btn-primary mb-4"
                   to={`/badges/${badge.id}/edit`}
